@@ -3,8 +3,10 @@ package com.axonactive.congdoan.service.implement;
 import com.axonactive.congdoan.entity.CongDoan;
 import com.axonactive.congdoan.exception.ResourceNotFoundException;
 import com.axonactive.congdoan.repository.CongDoanRepository;
+import com.axonactive.congdoan.repository.ThuCongDoanRepository;
 import com.axonactive.congdoan.resource.request.CongDoanRequest;
 import com.axonactive.congdoan.service.CongDoanService;
+import com.axonactive.congdoan.service.dto.AmountAndIdDto;
 import com.axonactive.congdoan.service.dto.CongDoanDto;
 import com.axonactive.congdoan.service.mapper.CongDoanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +17,10 @@ import java.util.List;
 public class CongDoanServiceImpl implements CongDoanService {
     @Autowired
     CongDoanRepository congDoanRepository;
+
+    @Autowired
+    ThuCongDoanRepository thuCongDoanRepository;
+
     @Autowired
     CongDoanMapper congDoanMapper;
 
@@ -55,5 +61,15 @@ public class CongDoanServiceImpl implements CongDoanService {
         updatedCongDoan.setPaymentDueDate(congDoanRequest.getPaymentDueDate());
         updatedCongDoan.setPaymentSentDate(congDoanRequest.getPaymentSentDate());
         return congDoanMapper.toDto(congDoanRepository.save(updatedCongDoan));
+    }
+
+    @Override
+    public List<CongDoanDto> findByDistrictAndCityContaining(String district, String city) {
+        return congDoanMapper.toDtos(congDoanRepository.findByDistrictAndCityContaining(district ,city));
+    }
+
+    @Override
+    public List<AmountAndIdDto> findByCongDoanIdentification(Integer id) {
+        return thuCongDoanRepository.findByCongDoanIdentification(id);
     }
 }

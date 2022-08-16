@@ -9,11 +9,14 @@ import com.axonactive.congdoan.repository.DanhMucThuCongDoanRepository;
 import com.axonactive.congdoan.repository.ThuCongDoanRepository;
 import com.axonactive.congdoan.resource.request.ThuCongDoanRequest;
 import com.axonactive.congdoan.service.ThuCongDoanService;
+import com.axonactive.congdoan.service.dto.AmountWithIdAndNameOfCongDoanDto;
+import com.axonactive.congdoan.service.dto.DateDto;
 import com.axonactive.congdoan.service.dto.ThuCongDoanDto;
 import com.axonactive.congdoan.service.mapper.ThuCongDoanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 @Service
 public class ThuCongDoanServiceImpl implements ThuCongDoanService {
@@ -46,8 +49,8 @@ public class ThuCongDoanServiceImpl implements ThuCongDoanService {
         createdThuCongDoan.setYear(thuCongDoanRequest.getYear());
         createdThuCongDoan.setCollectDate(thuCongDoanRequest.getCollectDate());
         createdThuCongDoan.setNote(thuCongDoanRequest.getNote());
-        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoan().getId()).orElseThrow(()-> new ResourceNotFoundException("Cong Doan Id Not Found"));
-        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoan().getId()).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
+        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Cong Doan Id Not Found"));
+        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
         createdThuCongDoan.setCongDoan(congDoan);
         createdThuCongDoan.setDanhMucThuCongDoan(danhMucThuCongDoan);
         return thuCongDoanMapper.toDto(thuCongDoanRepository.save(createdThuCongDoan));
@@ -66,10 +69,31 @@ public class ThuCongDoanServiceImpl implements ThuCongDoanService {
         updatedThuCongDoan.setYear(thuCongDoanRequest.getYear());
         updatedThuCongDoan.setCollectDate(thuCongDoanRequest.getCollectDate());
         updatedThuCongDoan.setNote(thuCongDoanRequest.getNote());
-        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoan().getId()).orElseThrow(()-> new ResourceNotFoundException("Cong Doan Id Not Found"));
-        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoan().getId()).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
+        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Cong Doan Id Not Found"));
+        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
         updatedThuCongDoan.setCongDoan(congDoan);
         updatedThuCongDoan.setDanhMucThuCongDoan(danhMucThuCongDoan);
         return thuCongDoanMapper.toDto(thuCongDoanRepository.save(updatedThuCongDoan));
     }
+
+    @Override
+    public List<ThuCongDoanDto> findByCongDoanId(Integer id) {
+        return thuCongDoanMapper.toDtos(thuCongDoanRepository.findByCongDoanId(id));
+    }
+
+    @Override
+    public List<ThuCongDoanDto> findByMonthAndYear(Integer month, Integer year) {
+        return thuCongDoanMapper.toDtos(thuCongDoanRepository.findByMonthAndYear(month ,year));
+    }
+
+    @Override
+    public List<AmountWithIdAndNameOfCongDoanDto> findByThuCongDoanMonthAndYear(Integer month, Integer year) {
+        return thuCongDoanRepository.findByThuCongDoanMonthAndYear(month,year);
+    }
+
+    @Override
+    public List<DateDto> findByDateBetween(LocalDate fromDate, LocalDate toDate) {
+        return thuCongDoanRepository.findByDateBetween(fromDate, toDate);
+    }
+
 }

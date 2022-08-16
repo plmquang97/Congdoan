@@ -4,6 +4,7 @@ import com.axonactive.congdoan.entity.CongDoan;
 import com.axonactive.congdoan.exception.ResourceNotFoundException;
 import com.axonactive.congdoan.resource.request.CongDoanRequest;
 import com.axonactive.congdoan.service.CongDoanService;
+import com.axonactive.congdoan.service.dto.AmountAndIdDto;
 import com.axonactive.congdoan.service.dto.CongDoanDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -48,5 +49,15 @@ public class CongDoanResource {
     @PutMapping("/{id}")
     ResponseEntity<CongDoanDto> update(@PathVariable(value = "id") Integer id, @RequestBody CongDoanRequest congDoanRequest) throws ResourceNotFoundException {
         return ResponseEntity.ok(congDoanService.update(id, congDoanRequest));
+    }
+
+    @GetMapping("/GetByDistrictAndCity")
+    ResponseEntity<List<CongDoanDto>> findCongDoanByDistrictAndCity(@RequestParam String district ,String city){
+        return ResponseEntity.ok(congDoanService.findByDistrictAndCityContaining(district,city));
+    }
+
+    @GetMapping("/GetTotalAmount")
+    ResponseEntity<List<AmountAndIdDto>> findSumAmountByCongDoanId(@RequestParam Integer id){
+        return ResponseEntity.ok(congDoanService.findByCongDoanIdentification(id));
     }
 }

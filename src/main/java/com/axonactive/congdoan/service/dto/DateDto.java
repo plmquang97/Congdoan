@@ -9,20 +9,12 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ThuCongDoanDto {
-    private Long id;
+public class DateDto {
+    private Integer congDoanId;
 
-    private Integer amount;
-
-    private Integer month;
-
-    private Integer year;
+    private String name;
 
     private LocalDate collectDate;
 
-    private String note;
-
-    private Integer congDoanId;
-
-    private Integer danhMucThuCongDoanId;
+    private Long amount;
 }

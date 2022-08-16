@@ -22,9 +22,9 @@ public class ThuCongDoanRequest {
 
     private String note;
 
-    private CongDoan congDoan;
+    private Integer congDoanId;
 
-    private DanhMucThuCongDoan danhMucThuCongDoan;
+    private Integer danhMucThuCongDoanId;
 
 
 
