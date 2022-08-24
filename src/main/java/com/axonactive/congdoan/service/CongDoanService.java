@@ -11,13 +11,13 @@ import java.util.List;
 public interface CongDoanService {
     List<CongDoanDto> getAll();
 
-    CongDoanDto findById(Integer id) throws ResourceNotFoundException;
+    CongDoanDto findById(Integer id) ;
 
     CongDoanDto save(CongDoanRequest congDoanRequest);
 
-    void delete(Integer id);
+    void delete(Integer id) throws ResourceNotFoundException;
 
-    CongDoanDto update(Integer id ,CongDoanRequest congDoanRequest) throws ResourceNotFoundException;
+    CongDoanDto update(Integer id ,CongDoanRequest congDoanRequest);
 
     List<CongDoanDto> findByDistrictAndCityContaining (String district , String city );
 

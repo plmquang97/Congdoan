@@ -1,0 +1,515 @@
+[2022-08-24 18:55:22] [main] [ERROR] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [applicationErrorLog]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [console]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.axonactive.congdoan.CongDoanApplication.main(CongDoanApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [applicationErrorLog]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [console]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:234)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:185)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 18 common frames omitted
+[2022-08-24 18:56:19] [main] [ERROR] o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [console]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:347)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:298)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:246)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:223)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.axonactive.congdoan.CongDoanApplication.main(CongDoanApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [console]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:234)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:185)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:332)
+	... 18 common frames omitted
+[2022-08-24 18:57:14] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 18:57:14] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 11360 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 18:57:14] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 18:57:15] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 18:57:15] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+[2022-08-24 18:57:16] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 18:57:16] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:57:16] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 18:57:16] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 18:57:16] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 18:57:16] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2023 ms
+[2022-08-24 18:57:16] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 18:57:16] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 18:57:16] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 18:57:17] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 18:57:17] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4f3c7808
+[2022-08-24 18:57:17] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 18:57:17] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 18:57:17] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 18:57:18] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 18:57:18] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:57:19] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 18:57:19] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:57:19] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 18:57:19] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.981 seconds (process running for 6.423)
+[2022-08-24 18:57:45] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:57:45] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 18:57:45] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 18:57:48] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 13908 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 18:57:48] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 18:57:48] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 18:57:49] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 18:57:49] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+[2022-08-24 18:57:50] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 18:57:50] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:57:50] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 18:57:50] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 18:57:50] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 18:57:50] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1865 ms
+[2022-08-24 18:57:50] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 18:57:50] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 18:57:51] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 18:57:51] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 18:57:51] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54495935
+[2022-08-24 18:57:51] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 18:57:51] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 18:57:51] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 18:57:52] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 18:57:52] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:57:53] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 18:57:53] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:57:53] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 18:57:53] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.519 seconds (process running for 5.954)
+[2022-08-24 18:59:04] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:59:04] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 18:59:04] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 18:59:08] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 18:59:08] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 1880 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 18:59:08] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 18:59:09] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 18:59:09] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces.
+[2022-08-24 18:59:10] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 18:59:10] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:59:10] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 18:59:10] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 18:59:10] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 18:59:10] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1983 ms
+[2022-08-24 18:59:10] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 18:59:10] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 18:59:11] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 18:59:11] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 18:59:11] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e3899fd
+[2022-08-24 18:59:11] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 18:59:11] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 18:59:11] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 18:59:12] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 18:59:12] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:59:13] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 18:59:13] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:59:13] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 18:59:13] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.901 seconds (process running for 6.41)
+[2022-08-24 18:59:47] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:59:47] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 18:59:47] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 18:59:50] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 18:59:50] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 22524 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 18:59:50] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 18:59:51] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 18:59:51] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+[2022-08-24 18:59:52] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 18:59:52] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:59:52] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 18:59:52] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 18:59:52] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 18:59:52] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1820 ms
+[2022-08-24 18:59:52] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 18:59:52] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 18:59:52] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 18:59:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 18:59:53] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e3899fd
+[2022-08-24 18:59:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 18:59:53] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 18:59:53] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 18:59:54] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 18:59:54] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 18:59:55] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 18:59:55] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 18:59:55] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 18:59:55] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.642 seconds (process running for 6.077)
+[2022-08-24 19:00:19] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:00:19] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:00:19] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:00:22] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:00:22] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 17676 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:00:22] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:00:23] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:00:23] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:00:24] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:00:24] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:00:24] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:00:24] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:00:24] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:00:24] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1948 ms
+[2022-08-24 19:00:24] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:00:24] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:00:24] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:00:24] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:00:25] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3de79067
+[2022-08-24 19:00:25] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:00:25] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:00:25] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:00:25] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:00:26] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:00:26] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:00:27] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:00:27] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:00:27] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.572 seconds (process running for 6.017)
+[2022-08-24 19:01:34] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:01:34] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:01:34] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:01:37] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 13472 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:01:37] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:01:37] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:01:38] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:01:39] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:01:40] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:01:40] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:01:40] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:01:40] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:01:40] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:01:40] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2217 ms
+[2022-08-24 19:01:40] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:01:40] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:01:40] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:01:40] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:01:41] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27e44e9c
+[2022-08-24 19:01:41] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:01:41] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:01:41] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:01:42] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:01:42] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:01:43] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:01:43] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:01:43] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 6.164 seconds (process running for 6.629)
+[2022-08-24 19:01:43] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:01:43] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:01:43] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:01:45] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:01:45] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 13832 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:01:45] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:01:46] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:01:46] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:01:47] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:01:47] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:01:47] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:01:47] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:01:47] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:01:47] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2198 ms
+[2022-08-24 19:01:48] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:01:48] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:01:48] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:01:48] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:01:48] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d484fcd
+[2022-08-24 19:01:48] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:01:48] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:01:48] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:01:49] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:01:49] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:01:50] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:01:51] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:01:51] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 6.055 seconds (process running for 6.661)
+[2022-08-24 19:01:51] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:01:51] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:01:51] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:01:54] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:01:54] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 9048 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:01:54] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:01:55] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:01:55] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:01:56] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:01:56] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:01:56] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:01:56] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:01:56] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:01:56] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2010 ms
+[2022-08-24 19:01:57] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:01:57] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:01:57] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:01:57] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:01:57] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2fde9469
+[2022-08-24 19:01:57] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:01:57] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:01:57] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:01:58] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:01:58] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:01:59] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:01:59] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:01:59] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:01:59] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.774 seconds (process running for 6.258)
+[2022-08-24 19:02:28] [http-nio-8080-exec-2] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-08-24 19:02:28] [http-nio-8080-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-08-24 19:02:29] [http-nio-8080-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2022-08-24 19:07:59] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:07:59] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:07:59] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:08:05] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:08:05] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 17600 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:08:05] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:08:06] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:08:07] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:08:07] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:08:07] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:08:07] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:08:07] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:08:08] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:08:08] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1974 ms
+[2022-08-24 19:08:08] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:08:08] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:08:08] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:08:08] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:08:08] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e3899fd
+[2022-08-24 19:08:08] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:08:08] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:08:08] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:08:09] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:08:09] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:08:10] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:08:11] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:08:11] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:08:11] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 5.906 seconds (process running for 6.483)
+[2022-08-24 19:08:19] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:08:19] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:08:19] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:08:29] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:08:29] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 12672 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:08:29] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:08:30] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:08:30] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:08:31] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:08:31] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:08:31] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:08:31] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:08:31] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:08:31] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2447 ms
+[2022-08-24 19:08:31] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:08:31] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:08:32] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:08:32] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:08:32] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19a5b637
+[2022-08-24 19:08:32] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:08:32] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:08:32] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:08:33] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:08:33] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:08:34] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:08:34] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:08:34] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:08:34] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 6.474 seconds (process running for 7.138)
+[2022-08-24 19:08:48] [http-nio-8080-exec-2] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-08-24 19:08:48] [http-nio-8080-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[2022-08-24 19:08:48] [http-nio-8080-exec-2] [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[2022-08-24 19:11:08] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:11:08] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:11:08] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:11:18] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:11:18] [main] [INFO ] c.a.congdoan.CongDoanApplication - Starting CongDoanApplication using Java 18.0.1.1 on AAVN-WS-052 with PID 14008 (D:\Personel Project\congdoan\target\classes started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:11:18] [main] [INFO ] c.a.congdoan.CongDoanApplication - The following 1 profile is active: "local"
+[2022-08-24 19:11:19] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:11:19] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:11:20] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[2022-08-24 19:11:20] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:11:20] [main] [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[2022-08-24 19:11:20] [main] [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.0.22]
+[2022-08-24 19:11:20] [main] [INFO ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[2022-08-24 19:11:20] [main] [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1924 ms
+[2022-08-24 19:11:20] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:11:20] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:11:21] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:11:21] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:11:21] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@19a5b637
+[2022-08-24 19:11:21] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:11:21] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL81Dialect
+[2022-08-24 19:11:21] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000026: PostgreSQL81Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+[2022-08-24 19:11:22] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:11:22] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:11:23] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:11:24] [main] [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[2022-08-24 19:11:24] [main] [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-08-24 19:11:24] [main] [INFO ] c.a.congdoan.CongDoanApplication - Started CongDoanApplication in 6.46 seconds (process running for 6.913)
+[2022-08-24 19:15:45] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:45] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:45] [background-preinit] [INFO ] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 7.0.4.Final
+[2022-08-24 19:15:46] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:46] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:46] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:46] [main] [INFO ] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.1.Final
+[2022-08-24 19:15:47] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:47] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[2022-08-24 19:15:47] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:47] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[2022-08-24 19:15:47] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:48] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:48] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:49] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:49] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 4.941 seconds (process running for 6.167)
+[2022-08-24 19:15:49] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:49] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[2022-08-24 19:15:49] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[2022-08-24 19:15:49] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:49] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:50] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:50] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:50] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:50] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:50] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[2022-08-24 19:15:50] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:50] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[2022-08-24 19:15:50] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:50] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:50] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:50] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:50] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.919 seconds (process running for 7.138)
+[2022-08-24 19:15:51] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:51] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[2022-08-24 19:15:51] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[2022-08-24 19:15:51] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:51] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:51] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:51] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:51] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:51] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:51] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+[2022-08-24 19:15:51] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:51] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+[2022-08-24 19:15:51] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:51] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:51] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:51] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:51] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.773 seconds (process running for 8.234)
+[2022-08-24 19:15:52] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+[2022-08-24 19:15:52] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:52] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:52] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:52] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:52] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:52] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+[2022-08-24 19:15:52] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:52] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:52] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:52] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:52] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.494 seconds (process running for 8.856)
+[2022-08-24 19:15:52] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+[2022-08-24 19:15:52] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:52] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:52] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:52] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:52] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:52] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:52] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+[2022-08-24 19:15:52] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:52] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:52] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:52] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:53] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.483 seconds (process running for 9.372)
+[2022-08-24 19:15:53] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+[2022-08-24 19:15:53] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:53] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:53] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:53] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:53] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:53] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+[2022-08-24 19:15:53] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:53] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:53] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:53] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:53] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.444 seconds (process running for 9.933)
+[2022-08-24 19:15:53] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+[2022-08-24 19:15:53] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:53] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:53] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:53] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:53] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:53] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn58: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:53] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+[2022-08-24 19:15:53] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:53] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:53] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:53] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:54] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.413 seconds (process running for 10.38)
+[2022-08-24 19:15:54] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:54] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+[2022-08-24 19:15:54] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+[2022-08-24 19:15:54] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Starting CongDoanServiceImplTest using Java 18.0.1.1 on AAVN-WS-052 with PID 11472 (started by plmquang in D:\Personel Project\congdoan)
+[2022-08-24 19:15:54] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - The following 1 profile is active: "unit-test"
+[2022-08-24 19:15:54] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-08-24 19:15:54] [main] [INFO ] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 3 JPA repository interfaces.
+[2022-08-24 19:15:54] [main] [INFO ] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-08-24 19:15:54] [main] [WARN ] org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+[2022-08-24 19:15:54] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+[2022-08-24 19:15:54] [main] [INFO ] com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection conn67: url=jdbc:h2:mem:testdb user=ADMIN
+[2022-08-24 19:15:54] [main] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+[2022-08-24 19:15:54] [main] [INFO ] SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-08-24 19:15:54] [main] [INFO ] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-08-24 19:15:54] [main] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:54] [main] [WARN ] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-08-24 19:15:54] [main] [INFO ] c.a.c.s.i.CongDoanServiceImplTest - Started CongDoanServiceImplTest in 0.377 seconds (process running for 10.792)
+[2022-08-24 19:15:54] [SpringApplicationShutdownHook] [INFO ] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-08-24 19:15:54] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+[2022-08-24 19:15:54] [SpringApplicationShutdownHook] [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.

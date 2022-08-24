@@ -41,7 +41,7 @@ public class DanhMucThuCongDoanResource {
     }
 
     @DeleteMapping("/{id}")
-    ResponseEntity<Void> delete(@PathVariable(value = "id") Integer id) {
+    ResponseEntity<Void> delete(@PathVariable(value = "id") Integer id) throws ResourceNotFoundException {
         danhMucThuCongDoanService.delete(id);
         return ResponseEntity.noContent().build();
     }

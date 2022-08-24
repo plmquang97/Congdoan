@@ -41,7 +41,7 @@ public class CongDoanResource {
     }
 
     @DeleteMapping("/{id}")
-    ResponseEntity<Void> deleteById(@PathVariable(value = "id") Integer id) {
+    ResponseEntity<Void> deleteById(@PathVariable(value = "id") Integer id) throws ResourceNotFoundException {
         congDoanService.delete(id);
         return ResponseEntity.noContent().build();
     }

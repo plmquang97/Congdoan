@@ -15,7 +15,7 @@ import java.util.List;
 public interface ThuCongDoanRepository extends JpaRepository<ThuCongDoan,Long> {
     List<ThuCongDoan> findByCongDoanId (Integer id);
 
-    List<ThuCongDoan> findByMonthAndYear (Integer month , Integer year);
+    List<ThuCongDoan> findByRetrieveMonthAndRetrieveYear (Integer month , Integer year);
 
     @Query("SELECT new com.axonactive.congdoan.service.dto.AmountAndIdDto (t.congDoan.id ,  SUM(t.amount)) " +
             "FROM ThuCongDoan t  " +
@@ -26,8 +26,8 @@ public interface ThuCongDoanRepository extends JpaRepository<ThuCongDoan,Long> {
     @Query("SELECT new com.axonactive.congdoan.service.dto.AmountWithIdAndNameOfCongDoanDto ( cd.id , cd.name , SUM(t.amount)) " +
             "FROM CongDoan cd LEFT JOIN ThuCongDoan t " +
             "ON cd.id = t.congDoan.id " +
-                "AND t.month = ?1 " +
-                "AND t.year = ?2 " +
+                "AND t.retrieveMonth = ?1 " +
+                "AND t.retrieveYear = ?2 " +
             "GROUP BY cd.id ,cd.name")
     List<AmountWithIdAndNameOfCongDoanDto> findByThuCongDoanMonthAndYear (Integer month , Integer year );
 

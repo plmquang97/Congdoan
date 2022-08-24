@@ -60,7 +60,7 @@ public class ThuCongDoanResource {
 
     @GetMapping("/GetByMonthAndYear")
     ResponseEntity<List<ThuCongDoanDto>> findByMonthAndYear (@RequestParam Integer month , Integer year){
-        return ResponseEntity.ok(thuCongDoanService.findByMonthAndYear(month ,year));
+        return ResponseEntity.ok(thuCongDoanService.findByRetrieveMonthAndRetrieveYear(month ,year));
     }
     @GetMapping("/GetEveryCongDoanByMonthAndYear")
     ResponseEntity<List<AmountWithIdAndNameOfCongDoanDto>> findCongDoanByMonthAndYear (@RequestParam Integer month , Integer year){

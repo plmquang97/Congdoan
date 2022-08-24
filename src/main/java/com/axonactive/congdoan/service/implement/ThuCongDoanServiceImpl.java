@@ -37,20 +37,20 @@ public class ThuCongDoanServiceImpl implements ThuCongDoanService {
     }
 
     @Override
-    public ThuCongDoanDto findById(Long id) throws ResourceNotFoundException {
-        return thuCongDoanMapper.toDto(thuCongDoanRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Thu Cong Doan Id not found ")));
+    public ThuCongDoanDto findById(Long id) {
+        return thuCongDoanMapper.toDto(thuCongDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::ThuCongDoanNotFound));
     }
 
     @Override
-    public ThuCongDoanDto save(ThuCongDoanRequest thuCongDoanRequest) throws ResourceNotFoundException {
+    public ThuCongDoanDto save(ThuCongDoanRequest thuCongDoanRequest) {
         ThuCongDoan createdThuCongDoan = new ThuCongDoan();
         createdThuCongDoan.setAmount(thuCongDoanRequest.getAmount());
-        createdThuCongDoan.setMonth(thuCongDoanRequest.getMonth());
-        createdThuCongDoan.setYear(thuCongDoanRequest.getYear());
+        createdThuCongDoan.setRetrieveMonth(thuCongDoanRequest.getRetrieveMonth());
+        createdThuCongDoan.setRetrieveYear(thuCongDoanRequest.getRetrieveYear());
         createdThuCongDoan.setCollectDate(thuCongDoanRequest.getCollectDate());
         createdThuCongDoan.setNote(thuCongDoanRequest.getNote());
-        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Cong Doan Id Not Found"));
-        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
+        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoanId()).orElseThrow(ResourceNotFoundException::CongDoanNotFound);
+        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoanId()).orElseThrow(ResourceNotFoundException::DanhMucThuCongDoanNotFound);
         createdThuCongDoan.setCongDoan(congDoan);
         createdThuCongDoan.setDanhMucThuCongDoan(danhMucThuCongDoan);
         return thuCongDoanMapper.toDto(thuCongDoanRepository.save(createdThuCongDoan));
@@ -58,19 +58,21 @@ public class ThuCongDoanServiceImpl implements ThuCongDoanService {
 
     @Override
     public void delete(Long id) {
+        thuCongDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::ThuCongDoanNotFound);
         thuCongDoanRepository.deleteById(id);
+
     }
 
     @Override
-    public ThuCongDoanDto update(Long id, ThuCongDoanRequest thuCongDoanRequest) throws ResourceNotFoundException {
-        ThuCongDoan updatedThuCongDoan = thuCongDoanRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Thu Cong Doan Id Not Found "));
+    public ThuCongDoanDto update(Long id, ThuCongDoanRequest thuCongDoanRequest) {
+        ThuCongDoan updatedThuCongDoan = thuCongDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::ThuCongDoanNotFound);
         updatedThuCongDoan.setAmount(thuCongDoanRequest.getAmount());
-        updatedThuCongDoan.setMonth(thuCongDoanRequest.getMonth());
-        updatedThuCongDoan.setYear(thuCongDoanRequest.getYear());
+        updatedThuCongDoan.setRetrieveMonth(thuCongDoanRequest.getRetrieveMonth());
+        updatedThuCongDoan.setRetrieveYear(thuCongDoanRequest.getRetrieveYear());
         updatedThuCongDoan.setCollectDate(thuCongDoanRequest.getCollectDate());
         updatedThuCongDoan.setNote(thuCongDoanRequest.getNote());
-        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Cong Doan Id Not Found"));
-        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoanId()).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
+        CongDoan congDoan = congDoanRepository.findById(thuCongDoanRequest.getCongDoanId()).orElseThrow(ResourceNotFoundException::CongDoanNotFound);
+        DanhMucThuCongDoan danhMucThuCongDoan = danhMucThuCongDoanRepository.findById(thuCongDoanRequest.getDanhMucThuCongDoanId()).orElseThrow(ResourceNotFoundException::DanhMucThuCongDoanNotFound);
         updatedThuCongDoan.setCongDoan(congDoan);
         updatedThuCongDoan.setDanhMucThuCongDoan(danhMucThuCongDoan);
         return thuCongDoanMapper.toDto(thuCongDoanRepository.save(updatedThuCongDoan));
@@ -82,8 +84,8 @@ public class ThuCongDoanServiceImpl implements ThuCongDoanService {
     }
 
     @Override
-    public List<ThuCongDoanDto> findByMonthAndYear(Integer month, Integer year) {
-        return thuCongDoanMapper.toDtos(thuCongDoanRepository.findByMonthAndYear(month ,year));
+    public List<ThuCongDoanDto> findByRetrieveMonthAndRetrieveYear(Integer month, Integer year) {
+        return thuCongDoanMapper.toDtos(thuCongDoanRepository.findByRetrieveMonthAndRetrieveYear(month ,year));
     }
 
     @Override

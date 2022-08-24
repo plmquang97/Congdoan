@@ -24,8 +24,8 @@ public class DanhMucThuCongDoanServiceImpl  implements DanhMucThuCongDoanService
     }
 
     @Override
-    public DanhMucThuCongDoanDto findById(Integer id) throws ResourceNotFoundException {
-        return danhMucThuCongDoanMapper.toDto(danhMucThuCongDoanRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found")));
+    public DanhMucThuCongDoanDto findById(Integer id){
+        return danhMucThuCongDoanMapper.toDto(danhMucThuCongDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::DanhMucThuCongDoanNotFound));
     }
 
     @Override
@@ -38,12 +38,13 @@ public class DanhMucThuCongDoanServiceImpl  implements DanhMucThuCongDoanService
 
     @Override
     public void delete(Integer id) {
+        danhMucThuCongDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::DanhMucThuCongDoanNotFound);
         danhMucThuCongDoanRepository.deleteById(id);
     }
 
     @Override
-    public DanhMucThuCongDoanDto update(Integer id, DanhMucThuCongDoanRequest danhMucThuCongDoanRequest) throws ResourceNotFoundException {
-        DanhMucThuCongDoan updatedDanhMucThuCongDoan = danhMucThuCongDoanRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Danh Muc Thu Cong Doan Id Not Found"));
+    public DanhMucThuCongDoanDto update(Integer id, DanhMucThuCongDoanRequest danhMucThuCongDoanRequest) {
+        DanhMucThuCongDoan updatedDanhMucThuCongDoan = danhMucThuCongDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::DanhMucThuCongDoanNotFound);
         updatedDanhMucThuCongDoan.setName(danhMucThuCongDoanRequest.getName());
         updatedDanhMucThuCongDoan.setCode(danhMucThuCongDoanRequest.getCode());
         return danhMucThuCongDoanMapper.toDto(danhMucThuCongDoanRepository.save(updatedDanhMucThuCongDoan));

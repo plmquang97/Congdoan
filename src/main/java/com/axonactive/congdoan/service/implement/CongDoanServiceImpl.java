@@ -30,8 +30,8 @@ public class CongDoanServiceImpl implements CongDoanService {
     }
 
     @Override
-    public CongDoanDto findById(Integer id) throws ResourceNotFoundException {
-        return congDoanMapper.toDto(congDoanRepository.findById(id).orElseThrow(()-> new ResourceNotFoundException("Cong doan Id not found")));
+    public CongDoanDto findById(Integer id) {
+        return congDoanMapper.toDto(congDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::CongDoanNotFound));
     }
 
     @Override
@@ -48,12 +48,13 @@ public class CongDoanServiceImpl implements CongDoanService {
 
     @Override
     public void delete(Integer id) {
+        congDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::CongDoanNotFound);
         congDoanRepository.deleteById(id);
     }
 
     @Override
-    public CongDoanDto update(Integer id, CongDoanRequest congDoanRequest) throws ResourceNotFoundException {
-        CongDoan updatedCongDoan = congDoanRepository.findById(id).orElseThrow(()->new ResourceNotFoundException("Cong Doan Id not found"));
+    public CongDoanDto update(Integer id, CongDoanRequest congDoanRequest)  {
+        CongDoan updatedCongDoan = congDoanRepository.findById(id).orElseThrow(ResourceNotFoundException::CongDoanNotFound);
         updatedCongDoan.setName((congDoanRequest.getName()));
         updatedCongDoan.setAddress(congDoanRequest.getAddress());
         updatedCongDoan.setDistrict(congDoanRequest.getDistrict());

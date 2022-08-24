@@ -2,6 +2,7 @@ package com.axonactive.congdoan.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class ThuCongDoan {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,9 +20,9 @@ public class ThuCongDoan {
 
     private Integer amount;
 
-    private Integer month;
+    private Integer retrieveMonth;
 
-    private Integer year;
+    private Integer retrieveYear;
 
     private LocalDate collectDate;
 

@@ -1,0 +1,22 @@
+<configuration>
+    <property name="LOG_PATTERN" value="[%d{yyyy-MM-dd HH:mm:ss}] [%thread] [%-5level] %logger{36} - %msg%n"/>
+    <property name="APP_LOG_ROOT" value="./logs"/>
+    <property name="DATE" value="%d{yyyy-MM-dd}"/>
+
+
+    <appender name="applicationNormalLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${APP_LOG_ROOT}/${DATE}/info-log.%i.log</fileNamePattern>
+            <maxHistory>0</maxHistory>
+            <totalSizeCap>0</totalSizeCap>
+            <maxFileSize>10MB</maxFileSize>
+        </rollingPolicy>
+    </appender>
+
+    <root level="info">
+    <appender-ref ref="applicationNormalLog"/>
+    </root>
+</configuration>

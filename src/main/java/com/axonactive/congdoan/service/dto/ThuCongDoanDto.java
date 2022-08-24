@@ -14,9 +14,9 @@ public class ThuCongDoanDto {
 
     private Integer amount;
 
-    private Integer month;
+    private Integer retrieveMonth;
 
-    private Integer year;
+    private Integer retrieveYear;
 
     private LocalDate collectDate;
 

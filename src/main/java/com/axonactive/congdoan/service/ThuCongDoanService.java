@@ -14,17 +14,17 @@ import java.util.List;
 public interface ThuCongDoanService {
     List<ThuCongDoanDto> getAll();
 
-    ThuCongDoanDto findById(Long id) throws ResourceNotFoundException;
+    ThuCongDoanDto findById(Long id);
 
-    ThuCongDoanDto save(ThuCongDoanRequest thuCongDoanRequest) throws ResourceNotFoundException;
+    ThuCongDoanDto save(ThuCongDoanRequest thuCongDoanRequest);
 
     void delete(Long id);
 
-    ThuCongDoanDto update(Long id , ThuCongDoanRequest thuCongDoanRequest) throws ResourceNotFoundException;
+    ThuCongDoanDto update(Long id , ThuCongDoanRequest thuCongDoanRequest);
 
     List<ThuCongDoanDto> findByCongDoanId (Integer id);
 
-    List<ThuCongDoanDto> findByMonthAndYear (Integer month , Integer year);
+    List<ThuCongDoanDto> findByRetrieveMonthAndRetrieveYear (Integer month , Integer year);
 
     List<AmountWithIdAndNameOfCongDoanDto> findByThuCongDoanMonthAndYear (Integer month , Integer year );
 
